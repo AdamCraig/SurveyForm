@@ -17,6 +17,7 @@
   background-color: #BDFDFF;
   border-color: #3092A6;
   color: #425959;
+  box-shadow: 0 8px 15px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.6);
 }
 
 .submitButton {
@@ -55,15 +56,23 @@
   margin-left: 8px;
 }
 
-.heading {
-  margin: 0 0 15px 0;
-  padding: 30px 20px 20px 20px;
+.bandinput {
+  margin-top: 10px;
+}
 
+.heading {
+  margin: 0 0 60px 0;
+  padding: 30px 20px 20px 20px;
+  box-shadow: 0 8px 15px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.6);
   color: #425959;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   text-align: center;
   background: #BDFDFF;
   max-width: 100%;
+}
 
+.radio {
+  margin-top: 20px;
+  margin-bottom: 80px;
 }
