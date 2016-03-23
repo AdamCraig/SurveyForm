@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1 class="heading">Please complete the following survey.</h1>
+
+      <form id="info">
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+
+        <div class="form-group">
+          <label for="occupation">What do you do?</label>
+          <input id="occupation" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="location">What city do you live in?</label>
+          <input id="location" class="form-control" type="text">
+        </div>
+
+        <div class="food form-group">
+            <label for="food">Tacos or Burritos?</label>
+            <select class="form-control" id="food">
+              <option value="Taco">Tacos</option>
+              <option value="Burritos">Burritos</option>
+              <option value="Both!">Both!</option>
+            </select>
+        </div>
+        <p></p>
+
+    <div class="radio form-group">
+      <label for="band">What is your favorite band?</label>
+        <div class="band">
+          <label>
+            <input type="radio" name="band" value="Creed">
+            <span class="option">Creed</span>
+          </label>
+        </div>
+        <div class="band">
+          <label>
+            <input type="radio" name="band" value="Bieber">
+            <span class="option">Bieber</span>
+          </label>
+        </div>
+        <div class="band">
+          <label>
+            <input type="radio" name="band" value="Nickelback">
+            <span class="option">Nickelback</span>
+          </label>
+        </div>
+        <div class="band">
+          <label>
+            <input type="radio" name="band" value="American Idol">
+            <span class="option">American Idol</span>
+          </label>
+        </div>
+    </div>
+
+      <div class="submitButton">
+        <button type="submit" class="btn"><span id="submitText">Submit Survey</span></button>
+      </div>
+      </form>
+
+
+    <div class="surveyresult">
+        <p>Thanks for completing our survey. Here's a review of your answers.</p>
+        <p>Name: <span id="nameResult"></span></p>
+        <p>Occupation: <span id="occupationResult"></span></p>
+        <p>City of residence: <span id="locationResult"></span></p>
+        <p>Favorite band: <span id="bandResult"></span></p>
+        <p>Favorite food: <span id="foodResult"></span></p>
+        <p>Date of birth: <span id="bornResult"></span></p>
+
+    </div>
+  </body>
+
+</html>
